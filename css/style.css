@@ -4,6 +4,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
 }
 
 .header {
@@ -112,4 +113,156 @@ body {
   height: 16px;
   background: #003a8c;
   margin-right: 12px;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 16px;
+}
+
+.menu-sidebar {
+  max-width: 192px;
+  width: 100%;
+  margin-right: 16px;
+}
+
+.menu-sidebar .user {
+  padding-left: 8px;
+}
+
+.menu-sidebar .user-avatar {
+  width: 24px;
+  height: 24px;
+  padding-right: 0;
+}
+
+.menu-sidebar .user-name::after {
+  display: none;
+}
+
+.menu-sidebar .user-name {
+  padding-left: 8px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #262626;
+}
+
+.nav-group {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.nav-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #262626;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #595959;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.nav-link.active {
+  background: #ffffff; 
+  color: #262626; 
+}
+
+.nav-text {
+  padding-left: 8px;
+}
+
+.nav-text.active {
+  font-weight: 600;
+}
+
+.main-feed {
+  max-width: 588px;
+  flex-grow: 1;
+  margin-right: 16px;
+}
+
+.create-post {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.create-post-header {
+  background: #f5f5f5;
+  padding: 9px 16px;
+}
+
+.create-post-title {
+  margin: 0;  
+  color: #595959;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.create-post-body {
+  display: flex;
+  padding: 16px;
+  padding-bottom: 24px;
+}
+
+.create-post-body .user-avatar {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+
+.create-post-input {
+  padding-top: 8px;
+  padding-left: 16px;
+  width: 100%;
+}
+
+.create-post-footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 16px;
+  padding-top: 0;
+}
+
+.create-post-footer::before {
+  content: "";
+  width: 556px;
+  height: 1px;
+  background-color: #e8e8e8;
+  margin-bottom: 16px;
+  
+}
+
+.button-text {
+  padding-left: 8px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  padding: 9px 12px;
+  border: none;
+  background: #F5F5F5;
+  border-radius: 48px;
+  margin-right: 8px;
 }
